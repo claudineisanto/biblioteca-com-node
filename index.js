@@ -13,10 +13,6 @@ function pegaArquivo(caminhoDoArequivo) {
         .readFile(caminhoDoArequivo, encoding)
         .then((texto) => console.log(chalk.gray(texto)))
         .catch(trataErro)
-    if (erro) {
-        trataErro(erro);
-    }
-    console.log(chalk.green(texto))
 }
 
 
